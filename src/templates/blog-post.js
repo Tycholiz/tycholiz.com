@@ -6,11 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({
-  pageContext,
-  location,
-  data,
-}) => {
+const BlogPostTemplate = ({ pageContext, location, data }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
@@ -81,7 +77,6 @@ const BlogPostTemplate = ({
     </Layout>
   )
 }
-
 
 export default BlogPostTemplate
 
